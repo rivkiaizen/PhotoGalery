@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login angualr example</title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/angular.js"></script>
+    <script src="login.js"></script>
+    <meta charset="utf-8" />
+</head>
+<body dir="rtl" ng-app="app">
+    <div class="container" ng-controller="loginController">
+        <div class="row" >
+            <div class="col-md-4 col-md-offset-4">
+                <div class="well">
+                    <div class="form-group">
+                        <label for="name">שם:</label>
+                        <input type="text" name="name" ng-model="user.name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">סיסמא:</label>
+                        <input type="password" name="password" ng-model="user.password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <button class="form-control btn btn-primary" ng-disabled="!user.name"  ng-click="login()">כניסה</button>
+                        <span ng-class="{'label-success': isSuccess, 'label-danger':!isSuccess}"  ng-bind="message"  > </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-hide="!user.name">
+            שלום,
+            {{user.name}}
+        </div>
+    </div>
+</body>
+</html>
