@@ -14,6 +14,7 @@
         // Custom modules 
         'photoApp.login',
         'photoApp.photo',
+
         'photoApp.services',
         'photoApp.filters',
         'photoApp.directives',
