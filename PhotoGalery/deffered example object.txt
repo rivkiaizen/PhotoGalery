@@ -1,0 +1,23 @@
+       function deferedObject() {
+            var self = this;
+            self.resolve = function (data) {
+                self.onSuccess(data);
+            },
+            self.reject = function (data) {
+                self.onError(data);
+            },
+            self.onSuccess = function (data) {
+                console.log("function then did not called  on promise");
+            },
+            self.onError = function (data) {
+                console.log("function error did not called called on promise");
+            },
+            self.promise = {
+                then: function (doOnSucces) {
+                    self.onSuccess = doOnSucces;
+                },
+                error: function (doOnError) {
+                    self.onError = doOnError;
+                }
+            }
+        };
