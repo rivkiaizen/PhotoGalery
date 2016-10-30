@@ -289,6 +289,8 @@
     <Content Include="angular-course-thursday.docx" />
     <Content Include="Introduction to AngularJS.pptx" />
     <Content Include="AngularJS-directive - final.pptx" />
+    <Content Include="angular-course-sunday.docx" />
+    <Content Include="How_to_optimize_your_AngularJS_Applications_-1.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
